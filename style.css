@@ -1935,7 +1935,7 @@ p.entry-meta {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Steve edits  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .site-header {
 	transition-duration: 0.25s;
-	padding-bottom: 70px;
+	padding-bottom: 90px;
 }
 .headerRight, .headerRight a {
 	padding-top: 2.4rem;
@@ -1992,6 +1992,164 @@ p.entry-meta {
 .genesis-nav-menu .sub-menu a:hover, .home.front-page .genesis-nav-menu .sub-menu a:hover {
 	color: #3aa;
 }
+.home.front-page .site-inner {
+	padding-top: 300px;
+}
+.site-inner {
+	padding-top: 100px;
+}
+.home #genesis-responsive-slider {
+	border: none;
+	padding: 0;
+}
+.home #genesis-responsive-slider a img:hover {
+	opacity: 1;
+}
+.front-page-1 .homeWelcome p {
+	color: #000;
+	text-transform: none;
+	font-size: 3.1rem;
+	line-height: 5.1rem;
+	letter-spacing: normal;
+}
+.homeBox {
+	padding: 0 20px;
+}
+.home .front-page-2 {
+	padding: 70px 0;
+}
+
+.home .front-page-3 {
+	background-image: url(images/no-image.jpg);
+	background-color: #0066ac;
+	padding: 10px 0;
+}
+.home .front-page-3 .widget-title {
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 5rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+}
+.home .front-page-4 {
+	background-color: #d5e6f1;
+	padding: 40px 0;
+}
+.home .front-page-4 a {
+	color: #0066ac;
+}
+.moreVideos a {
+	font-size: 3rem;
+	font-weight: 600;
+	font-style: italic;
+}
+.home .home-staff-right p {
+	text-align: left;
+	text-shadow: 0 0 1px #fff, 1px 1px 2px #fff;
+	line-height: normal;
+}
+div.envira-gallery-item-inner div.envira-video-play-icon {
+	background-image: url(images/playButton.png) !important;
+	background-position: center !important;
+	background-size: 20% !important;
+	background-repeat: no-repeat !important;
+}
+.envira-gallery-wrap .envira-gallery-public .envira-gallery-item-inner {
+    border: 2px solid #fff !important;
+    border-radius: 2px !important;
+	/*margin-top: 40px; */
+}
+.home .front-page-5 {
+	background-image: none;
+	background-color: #fff;
+	color: #000;
+	padding: 30px 0;
+}
+.home .front-page-5 p, .home .front-page-5 a, .home .front-page-5 .entry-title, .home .front-page-5 .widget-title, .home .front-page-5 .entry-content, .home .front-page-5 .featured-content .entry-title a {
+	color: #000;
+}
+.home .front-page-5 .widget-wrap .entry {
+	position: relative;
+	padding-bottom: 70px;
+}
+.home .front-page-5 .widget-wrap .entry .entry-title {
+	position: absolute;
+	text-align: right;
+	right: 20%;
+	bottom: 0;
+	font-size: 3rem;
+	font-style: italic;
+	font-weight: 400;
+}
+.home .front-page-5 .widget-wrap .entry .entry-title::before {
+	content: "--";
+	padding-right: 5px;
+}
+.home .front-page-5 .widget-wrap .entry .entry-content p:first-of-type::before {
+	/*content: url(images/curleyQuotesLeft.png); */
+	background-image: url(images/curleyQuotesLeft.png);
+	content: " ";
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding-right: 5px;
+	font-size: 1rem;
+	height: 45px;
+	width: 50px;
+	margin-right: 10px;
+}
+.home .front-page-5 .widget-wrap .entry .entry-content p:last-of-type::after {
+	/*content: url(images/curleyQuotesLeft.png); */
+	background-image: url(images/curleyQuotesRight.png);
+	content: " ";
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding-right: 5px;
+	font-size: 1rem;
+	height: 45px;
+	width: 50px;
+	margin-left: 10px;
+}
+.home .front-page-5 .widget-wrap .more-from-category {
+	font-style: italic;
+}
+
+
+.footer-widgets {
+	background-color: #06ae4b;
+	color: #fff;
+}
+.footer-widgets .widget-title {
+	font-size: 3rem;
+	line-height: 4rem;
+	margin-bottom: 5px;
+}
+.footer-widgets {
+	font-size: 25px;
+	font-size: 2.5rem;
+	line-height: normal;
+}
+.footer-widgets .wp-google-content-inner {
+	position: absolute !important;
+	left: -99999px !important;
+}
+.footer-widgets .wp-google-left img {
+	opacity: 0;
+}
+
+.footer-widgets .wp-google-left {
+	background-image: url(images/LikeGoogle.png) !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+.footer-widgets .google-reviews-widget {
+	padding: 5px;
+	background-color: rgba(255,255,255,0.7);
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
 
 
 a img:hover {
@@ -2011,6 +2169,11 @@ a img:hover {
 	float: right;
 	padding: 0 0 20px 15px;
 }
+.home .front-page-1, .home .front-page-2, .home .front-page-3, .home .front-page-5, .home .front-page-5 {
+	margin-top: 0;
+}
+
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end Steve edits  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
