@@ -2065,6 +2065,7 @@ div.envira-gallery-item-inner div.envira-video-play-icon {
 	background-color: #fff;
 	color: #000;
 	padding: 30px 0;
+	padding: 0 0 60px;
 }
 .home .front-page-5 p, .home .front-page-5 a, .home .front-page-5 .entry-title, .home .front-page-5 .widget-title, .home .front-page-5 .entry-content, .home .front-page-5 .featured-content .entry-title a {
 	color: #000;
@@ -2115,8 +2116,17 @@ div.envira-gallery-item-inner div.envira-video-play-icon {
 .home .front-page-5 .widget-wrap .more-from-category {
 	font-style: italic;
 }
-
-
+.home .front-page-5 .widget-wrap .more-from-category a {
+	color: #888;
+}
+.home .front-page-5 .widget-wrap .more-from-category a::before {
+	content: ">>";
+	padding-right: 10px;
+}
+.home .front-page-5 .widget-wrap .more-from-category a::after {
+	content: "<<";
+	padding-left: 10px;
+}
 .footer-widgets {
 	background-color: #06ae4b;
 	color: #fff;
@@ -2131,11 +2141,11 @@ div.envira-gallery-item-inner div.envira-video-play-icon {
 	font-size: 2.5rem;
 	line-height: normal;
 }
-.footer-widgets .wp-google-content-inner {
+.footer-widgets .wp-google-content-inner, .footer-widgets .wp-facebook-content-inner {
 	position: absolute !important;
 	left: -99999px !important;
 }
-.footer-widgets .wp-google-left img {
+.footer-widgets .wp-google-left img, .footer-widgets .wp-facebook-left img {
 	opacity: 0;
 }
 
@@ -2144,7 +2154,14 @@ div.envira-gallery-item-inner div.envira-video-play-icon {
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
 }
-.footer-widgets .google-reviews-widget {
+
+.footer-widgets .wp-facebook-left {
+	background-image: url(images/LikeFaceBook.png) !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+
+.footer-widgets .google-reviews-widget, .footer-widgets .fb-reviews-widget {
 	padding: 5px;
 	background-color: rgba(255,255,255,0.7);
 	border: 1px solid #fff;
@@ -2169,10 +2186,50 @@ a img:hover {
 	float: right;
 	padding: 0 0 20px 15px;
 }
-.home .front-page-1, .home .front-page-2, .home .front-page-3, .home .front-page-5, .home .front-page-5 {
+.home .front-page-1, .home .front-page-2, .home .front-page-3, .home .front-page-4, .home .front-pageX-5 {
 	margin-top: 0;
 }
-
+.sidebar-primary .refillWidget {
+	padding: 0 0 30px;
+}
+.sidebar-primary .widget-title {
+	font-size: 2.7rem;
+	text-transform: none;
+	color: #004f9e;
+	text-align: center;
+}
+.sidebar-primary .entry-title {
+	font-size: 2.1rem;
+}
+.sidebar-primary .entry-content {
+	line-height: normal;
+	padding: 0 2%;
+}
+.sidebarCTA a {
+	display: table;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #06ae4b;
+	margin: 0 auto;
+	padding: 5px 30px;
+	font-size: 3rem;
+}
+.sidebarCTA a:hover {
+	opacity: 0.8;
+}
+.leftOut {
+	position: absolute;
+	left: -99999px;
+	height: 0;
+	overflow: hidden;
+}
+.logged-in .leftOut.viewWhenLogged, .logged-in .viewWhenLogged {
+	position: relative;
+	left: 0;
+	height: auto;
+	overflow: visible;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end Steve edits  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -2187,7 +2244,9 @@ a img:hover {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+	.site-container .title-area {
+		width: 100%;
+	}
 	.header-image .title-area {
 		background-position: center !important;
 		display: block;
@@ -2199,8 +2258,25 @@ a img:hover {
 		width: 90%;
 		text-align: center;
 	}
+	.headerRight {
+		text-align: center;
+	}
 	.header-widget-area .textRight {
 		text-align: center;	
+	}
+	.headerWhiteOut {
+		position: relative;
+		top: 0px;
+		padding-top: 0;
+	}
+	.white .headerWhiteOut {
+		opacity: 1;
+	}
+	.headerHours {
+		padding-top: 0;
+	}
+	.nav-primary {
+		position: relative;
 	}
 	.soliloquy-container .soliloquy-item {
     	height: auto;
@@ -2224,6 +2300,7 @@ a img:hover {
 
 	.site-header {
 		position: static;
+		padding-bottom: 0;
 	}
 
 	.title-area {
@@ -2248,7 +2325,9 @@ a img:hover {
 	.site-title {
 		text-align: center;
 	}
-
+	.genesis-nav-menu a, .home.front-page .genesis-nav-menu a {
+		color: #000;	
+	}
 	.js nav.nav-primary,
 	.js .site-header nav {
 		display: none;
@@ -2262,7 +2341,10 @@ a img:hover {
 	.js nav.pagination {
 		display: block;
 	}
-
+	#mobile-undefined {
+		position:absolute;
+		left: -999999px;
+	}
 	.menu-toggle,
 	.sub-menu-toggle {
 		border-width: 0;
@@ -2385,6 +2467,9 @@ a img:hover {
 		padding-left: 5%;
 		padding-right: 5%;
 		padding-top: 60px;
+	}
+	.home.front-page .site-inner {
+		padding-top: 0;
 	}
 
 	.content,
